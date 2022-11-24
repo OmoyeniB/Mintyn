@@ -13,6 +13,7 @@ class MorePageViewController: UIViewController {
      
      override func viewDidLoad() {
          super.viewDidLoad()
+         title = Constants.Strings.more
          view.backgroundColor = Constants.Colors.blackColor
          view.addSubview(text)
      }

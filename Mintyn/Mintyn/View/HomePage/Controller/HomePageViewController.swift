@@ -17,13 +17,12 @@ class HomePageViewController: UIViewController {
         configureCollectionView()
     }
     
-    
     func configureCollectionView() {
+        title = Constants.Strings.home
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.register(UINib(nibName: HomePageCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: HomePageCollectionViewCell.identifier)
     }
-    
     
 }
 

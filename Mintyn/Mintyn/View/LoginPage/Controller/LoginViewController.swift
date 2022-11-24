@@ -88,8 +88,11 @@ class LoginViewController: UIViewController {
             tabbar.modalPresentationStyle = .fullScreen
             present(tabbar, animated: true)
             setUpLoginForm()
+        } else {
+            errorMessageLabel.text = viewModel.textField(phoneNumberTextField: phoneNumberTextField, passwordTextfield: passwordTextField)
+            errorMessageLabel.isHidden = false
         }
-        
+       
     }
     
     func configureCollectionView() {

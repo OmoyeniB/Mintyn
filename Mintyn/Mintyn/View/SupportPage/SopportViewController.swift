@@ -13,6 +13,7 @@ class SupportViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = Constants.Strings.support
         view.backgroundColor = Constants.Colors.blackColor
         view.addSubview(text)
     }

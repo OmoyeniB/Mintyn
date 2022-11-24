@@ -13,6 +13,7 @@ class TransactionViewController: UIViewController {
      
      override func viewDidLoad() {
          super.viewDidLoad()
+         title = Constants.Strings.transactions
          view.backgroundColor = Constants.Colors.blackColor
          view.addSubview(text)
      }
