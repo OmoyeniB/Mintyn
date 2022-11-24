@@ -34,7 +34,12 @@ final class SettingsViewModel: SettingsViewModelProtocol {
         case "System":
             let appDelegate = UIApplication.shared.windows.first
             if indexPath.row == 1 {
-                appDelegate?.overrideUserInterfaceStyle = .unspecified
+                if UITraitCollection.current.userInterfaceStyle == .dark {
+                    appDelegate?.overrideUserInterfaceStyle = .light
+                }
+                else {
+                    appDelegate?.overrideUserInterfaceStyle = .dark
+                }
             }
             else if indexPath.row == 0 {
                 darkLight = false
