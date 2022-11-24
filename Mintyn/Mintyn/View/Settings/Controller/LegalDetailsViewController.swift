@@ -8,16 +8,18 @@
 import UIKit
 
 class LegalDetailsViewController: UIViewController {
+    
     var label: String?
     let viewModel = SettingsViewModel()
     let tableView = UITableView()
-    
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .yellow
         view.addSubview(tableView)
         configureTableView()
+        title = label
     }
     
     override func viewDidLayoutSubviews() {
@@ -51,7 +53,6 @@ extension LegalDetailsViewController: UITableViewDataSource {
         case "System":
             if let cell = tableView.dequeueReusableCell(withIdentifier: SettingsLegalCell.identifier, for: indexPath) as? SettingsLegalCell, let label {
                 cell.setUpCell(model: viewModel.showSettingData()[indexPath.row], checklabel: label)
-//                cell.pointerImage.isHidden = true
                 cell.pointerImage.setImage(UIImage(systemName: "checkmark"), for: .normal)
                 return cell
             }
@@ -68,7 +69,6 @@ extension LegalDetailsViewController: UITableViewDataSource {
 
 extension LegalDetailsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        tableView.deselectRow(at: indexPath, animated: true)
         if let label {
             viewModel.configureAppearance(label: label, indexPath: indexPath)
         }
