@@ -34,7 +34,6 @@
 		58C660B5292EDB9A00FCC81D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C660B4292EDB9A00FCC81D /* Constants.swift */; };
 		58F91C8F292E43DD00CD8835 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F91C8E292E43DD00CD8835 /* AppDelegate.swift */; };
 		58F91C91292E43DD00CD8835 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F91C90292E43DD00CD8835 /* SceneDelegate.swift */; };
-		58F91C96292E43DD00CD8835 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58F91C94292E43DD00CD8835 /* Main.storyboard */; };
 		58F91C98292E43DF00CD8835 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58F91C97292E43DF00CD8835 /* Assets.xcassets */; };
 		58F91C9B292E43DF00CD8835 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58F91C99292E43DF00CD8835 /* LaunchScreen.storyboard */; };
 		58F91CA7292E44C400CD8835 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F91CA6292E44C400CD8835 /* CustomTabBar.swift */; };
@@ -69,7 +68,6 @@
 		58F91C8B292E43DD00CD8835 /* Mintyn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mintyn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58F91C8E292E43DD00CD8835 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58F91C90292E43DD00CD8835 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		58F91C95292E43DD00CD8835 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		58F91C97292E43DF00CD8835 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58F91C9A292E43DF00CD8835 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58F91C9C292E43DF00CD8835 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -260,9 +258,7 @@
 			children = (
 				58F91CA4292E443A00CD8835 /* App */,
 				58F91CA5292E444700CD8835 /* Utilities */,
-				58F91CA3292E442F00CD8835 /* ViewModel */,
 				58F91CA2292E442300CD8835 /* View */,
-				58F91C94292E43DD00CD8835 /* Main.storyboard */,
 				58F91C97292E43DF00CD8835 /* Assets.xcassets */,
 				58F91CA8292E469100CD8835 /* ColorAssets.xcassets */,
 				58F91C99292E43DF00CD8835 /* LaunchScreen.storyboard */,
@@ -282,13 +278,6 @@
 				58C660A9292ED3FF00FCC81D /* Settings */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		58F91CA3292E442F00CD8835 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		58F91CA4292E443A00CD8835 /* App */ = {
@@ -395,7 +384,6 @@
 				580DFD77292EF0D0004B2DBA /* HomePageCollectionViewCell.xib in Resources */,
 				58F91C98292E43DF00CD8835 /* Assets.xcassets in Resources */,
 				58F91CA9292E469100CD8835 /* ColorAssets.xcassets in Resources */,
-				58F91C96292E43DD00CD8835 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,14 +423,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		58F91C94292E43DD00CD8835 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				58F91C95292E43DD00CD8835 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		58F91C99292E43DF00CD8835 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -504,7 +484,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -558,7 +538,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
