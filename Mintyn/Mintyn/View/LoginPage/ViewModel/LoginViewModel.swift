@@ -60,6 +60,22 @@ final class LoginViewModel: LoginViewModelProtocol {
         return nil
     }
     
+    func textField(phoneNumberTextField: UITextField, passwordTextfield: UITextField) -> String? {
+        if let phoneNumber = phoneNumberTextField.text, let password = passwordTextfield.text {
+            if phoneNumber.isEmpty && password.isEmpty {
+                return "Ooops.. Phone Number & Password is required"
+            }
+            if phoneNumber.isEmpty {
+                return "Ooops.. Phone Number is required"
+            }
+            if password.isEmpty {
+                return "Ooops.. Password is required"
+            }
+        }
+        
+        return nil
+    }
+    
     func containsDigit(_ value: String) -> Bool {
         let reqularExpression = ".*[0-9]+.*"
         let predicate = NSPredicate(format: "SELF MATCHES %@", reqularExpression)
