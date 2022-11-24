@@ -21,7 +21,7 @@ public class MyCustomLabel: UILabel {
     
     private func setup() {
         self.translatesAutoresizingMaskIntoConstraints = false
-        self.text = "Please check *Home* and *Settings* Tab"
+        self.text = Constants.Strings.viewcontrollerLabel
         self.textAlignment = .center
         self.numberOfLines = 0
         self.textColor = Constants.Colors.whiteColor
