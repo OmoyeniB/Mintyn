@@ -8,9 +8,16 @@
 import UIKit
 
 enum Constants {
+    
     enum Strings {
         static let viewcontrollerLabel = "Please check *Home* and *Settings* Tab"
+        static let support = "Support"
+        static let settings = "Settings"
+        static let more = "More"
+        static let transactions = "Transactions"
+        static let home = "Home"
     }
+    
     enum Colors {
         static let blackColor = UIColor(named: "BlackColor")
         static let goldColor = UIColor(named: "GoldColor")
