@@ -9,7 +9,8 @@ import UIKit
 
 protocol LoginViewModelProtocol {
     func createLoginModel() -> [LoginDisplayModel]
-    
+    func invalidPhoneNumber(_ phoneNumber: String) -> String?
+    func invalidPassword(_ password: String) -> String?
 }
 
 final class LoginViewModel: LoginViewModelProtocol {
