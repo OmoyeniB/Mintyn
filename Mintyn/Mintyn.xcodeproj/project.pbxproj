@@ -22,6 +22,7 @@
 		580DFD97292FF3D9004B2DBA /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 580DFD96292FF3D9004B2DBA /* IQKeyboardManagerSwift */; };
 		580DFD99292FFDDC004B2DBA /* UITextfield+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580DFD98292FFDDC004B2DBA /* UITextfield+Extensions.swift */; };
 		580DFDA42930A27B004B2DBA /* MintynTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580DFDA32930A27B004B2DBA /* MintynTests.swift */; };
+		580DFDAC2930B9C8004B2DBA /* CreateValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580DFDAA2930AF12004B2DBA /* CreateValidator.swift */; };
 		58C66094292E7E9500FCC81D /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58C66093292E7E9500FCC81D /* LoginViewController.xib */; };
 		58C66096292E7F3600FCC81D /* LoginDisplayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C66095292E7F3600FCC81D /* LoginDisplayModel.swift */; };
 		58C66098292E7FAB00FCC81D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C66097292E7FAB00FCC81D /* LoginViewModel.swift */; };
@@ -67,6 +68,7 @@
 		580DFD98292FFDDC004B2DBA /* UITextfield+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextfield+Extensions.swift"; sourceTree = "<group>"; };
 		580DFDA12930A27B004B2DBA /* MintynTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MintynTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		580DFDA32930A27B004B2DBA /* MintynTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MintynTests.swift; sourceTree = "<group>"; };
+		580DFDAA2930AF12004B2DBA /* CreateValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateValidator.swift; sourceTree = "<group>"; };
 		58C66093292E7E9500FCC81D /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		58C66095292E7F3600FCC81D /* LoginDisplayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDisplayModel.swift; sourceTree = "<group>"; };
 		58C66097292E7FAB00FCC81D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -322,6 +324,7 @@
 		58F91CA5292E444700CD8835 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				580DFDAA2930AF12004B2DBA /* CreateValidator.swift */,
 				58F91CA6292E44C400CD8835 /* CustomTabBar.swift */,
 				58C660B4292EDB9A00FCC81D /* Constants.swift */,
 				580DFD93292FDF61004B2DBA /* CustomLabel.swift */,
@@ -472,6 +475,7 @@
 				580DFD7B292EF3E1004B2DBA /* HomePageViewModel.swift in Sources */,
 				58F91CA7292E44C400CD8835 /* CustomTabBar.swift in Sources */,
 				58C660B1292ED4A900FCC81D /* SopportViewController.swift in Sources */,
+				580DFDAC2930B9C8004B2DBA /* CreateValidator.swift in Sources */,
 				58C660AC292ED47500FCC81D /* TransactionViewController.swift in Sources */,
 				58F91C8F292E43DD00CD8835 /* AppDelegate.swift in Sources */,
 				58C660B5292EDB9A00FCC81D /* Constants.swift in Sources */,
