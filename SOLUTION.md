@@ -10,12 +10,14 @@ The app consists of three main components:
 - Login Page
 - Home Page
 - Settings Page
+- Unit Test
 
 ### Other components:
 Other components in the app are:
 - Login form validation
 - Dark and light mode switch
 - Logout
+_ Login Form Test Validation
 
 # Requirements
 - iOS Version ~> 13
